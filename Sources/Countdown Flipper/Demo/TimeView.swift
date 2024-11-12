@@ -13,6 +13,9 @@ public struct TimeView: View {
     @State private var currentTime: TimeModel = .defaultValue
     @State private var timer: Timer?
     
+    // MARK: - INITIALIZER
+    public init() { }
+    
     // MARK: - BODY
     public var body: some View {
         ViewThatFits {
