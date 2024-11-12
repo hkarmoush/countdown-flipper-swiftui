@@ -7,8 +7,8 @@
 ## ✨ Features
 
 - **Two-Way Flipping**: Configure the `flipperType` parameter for `.flipFromTop`, or `.flipFromBottom`.
-- **Automatic Counter Placement**: When you assign a new value to the `counter` parameter, the top, and bottom counters are managed automatically behind the scenes.
-- **Customizations**: More customizations will be added upon request such as color, corner radius, text, etc...
+- **Automatic Counter Placement**: When you assign a new value to the `counter` parameter, the top and bottom counters are automatically managed behind the scenes.
+- **Customizations**: Additional customizations, such as color, corner radius, and text, will be added upon request.
   
 ## 🤳🏻 Previews
 |UI Component - Counter Flipper|Use Case - Flip Clock|
