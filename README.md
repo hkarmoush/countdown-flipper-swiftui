@@ -1,0 +1,66 @@
+# Countdown Flipper SwiftUI 📆
+
+## 👨🏻‍🏫 Introduction
+`countdown-flipper-swiftui` is a versatile and visually engaging flip counter swiftui component designed to display the current time in a flipping animation style. It leverages SwiftUI to create a dynamic and interactive experience, simulating the look and feel of traditional flip clocks like use cases.
+
+
+## ✨ Features
+
+- **Two-Way Flipping**: Configure the `flipperType` parameter for `.flipFromTop`, or `.flipFromBottom`.
+- **Automatic Counter Placement**: When you assign a new value to the `counter` parameter, the top, and bottom counters are managed automatically behind the scenes.
+- **Customizations**: More customizations will be added upon request such as color, corner radius, text, etc...
+  
+## 🤳🏻 Previews
+|UI Component - Counter Flipper|Use Case - Flip Clock|
+|-|-|
+| <img src="https://github.com/KDTechniques/countdown-flipper-swiftui/blob/main/readme_assets/Counter%20Flipper.gif?raw=true" alt="Counter Flipper">|<img src="https://github.com/KDTechniques/countdown-flipper-swiftui/blob/main/readme_assets/Demo.gif?raw=true" alt="Demo">|
+
+
+## 🛠️ Installation
+
+### Swift Package Manager
+
+To integrate `countdown-flipper-swiftui` into your Swift project, add the following dependency to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/KDTechniques/countdown-flipper-swiftui.git", from: "1.0.0")
+]
+```
+### 🫛 CocoaPods
+For CocoaPods, add the following to your Podfile:
+
+```ruby
+pod 'countdown-flipper-swiftui', :git => '[https://github.com/KDTechniques/countdown-flipper-swiftui.git](https://github.com/KDTechniques/countdown-flipper-swiftui.git)'
+```
+
+
+## 📖 Usage
+```swift
+import SwiftUI
+import CountdownFlipperSwiftUI
+
+struct ContentView: View {
+    @State private var counter: Int = 0
+    
+    var body: some View {
+        VStack(spacing: 50) {
+            CountdownFlipperView(flipperType: .flipFromTop, counter: $counter, fontSize: 200) // <--- here
+            
+            Button("Generate Random Number: \(counter)") {
+                counter = .random(in: 0...9)
+            }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+        }
+    }
+}
+```
+
+
+## 🤝 Contribution
+Contributions are welcome! If you have suggestions or improvements, please submit a pull request or open an issue on GitHub.
+
+
+## 📜 License
+`countdown-flipper-swiftui` is released under the MIT License. See the [LICENSE](https://github.com/KDTechniques/countdown-flipper-swiftui/blob/main/LICENSE) file for details.
