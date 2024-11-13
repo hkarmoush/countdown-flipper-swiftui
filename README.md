@@ -66,7 +66,7 @@ struct ContentView: View {
 ## Behind the Scenes
 This is how I break down a larger problem into smaller, understandable pieces and build upon each step by step to achieve the final goal.
 
-<img src="https://media.licdn.com/dms/image/v2/D562CAQEPZwc_ME8F0Q/comment-image-shrink_8192_1280/comment-image-shrink_8192_1280/0/1731483124503?e=1732089600&v=beta&t=w8zoCUXSkGzcfQiSIM-1CDhlnLXyx4WCVxFXnljSmME" alt="Behind the Scenes">
+<img src="https://github.com/KDTechniques/countdown-flipper-swiftui/blob/main/readme_assets/Behind%20the%20Scenes.jpg?raw=true" alt="Behind the Scenes">
 
 
 ## 🤝 Contribution
