@@ -64,8 +64,7 @@ extension TopLayerView {
             topTrailingRadius: alignment == .top ? cornerRadiusLarge : cornerRadiusSmall
         )
         .fill(.black)
-        .fill(alignment == .top ? vm.colorTop : vm.clearGradient)
-        .fill(alignment == .bottom ? vm.colorBottom :vm.clearGradient)
+        .fill(vm.clearGradient)
         .shadow(color: vm.values.shadowColor, radius: vm.values.shadowRadius)
         .frame(height: vm.values.maskheight)
     }
