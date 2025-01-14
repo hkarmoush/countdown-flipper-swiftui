@@ -14,11 +14,11 @@ public struct CountdownFlipperView: View {
     @Binding var counter: Int
     
     // MARK: - INTIALIZER
-    public init(flipperType: FlipFromTypes = .flipFromTop, counter: Binding<Int>, fontSize: CGFloat) {
-        self.flipperType = flipperType
-        _counter = counter
-        _vm = State(initialValue: .init(fontSize: fontSize))
-    }
+    public init(flipperType: FlipFromTypes = .flipFromTop, counter: Binding<Int>, fontSize: CGFloat, backgroundColor: Color = .ultraThinMaterial) {
+    self.flipperType = flipperType
+    _counter = counter
+    _vm = State(initialValue: .init(fontSize: fontSize, backgroundColor: backgroundColor))
+}
     
     // MARK: - BODY
     public var body: some View {
@@ -77,7 +77,7 @@ extension CountdownFlipperView {
     // MARK: - background
     private var background: some View {
         RoundedRectangle(cornerRadius: vm.values.cornerRadiusLarge + vm.values.spaceBetweenFrames)
-            .fill(Colors.black)
+            .fill(vm.backgroundColor)
     }
     
     // MARK: FUNCTIONS
