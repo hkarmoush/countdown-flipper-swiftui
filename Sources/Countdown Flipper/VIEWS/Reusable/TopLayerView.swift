@@ -36,7 +36,7 @@ struct TopLayerView: View {
             .font(.system(size: vm.values.fontSize))
             .fontDesign(.rounded)
             .frame(width: vm.values.frameWidth, height: vm.values.frameHeight)
-            .foregroundStyle(Color.black)
+            .foregroundStyle(Color.white)
             .maskSection(alignment: alignment, height: vm.values.maskheight)
             .background(alignment: alignment) { background }
             .rotation3DEffect(.degrees(angleX), axis: (x: 1, y: 0, z: 0))
