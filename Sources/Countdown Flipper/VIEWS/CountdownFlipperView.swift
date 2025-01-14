@@ -77,7 +77,7 @@ extension CountdownFlipperView {
     // MARK: - background
     private var background: some View {
         RoundedRectangle(cornerRadius: vm.values.cornerRadiusLarge + vm.values.spaceBetweenFrames)
-            .fill(.ultraThinMaterial)
+            .fill(Colors.black)
     }
     
     // MARK: FUNCTIONS
