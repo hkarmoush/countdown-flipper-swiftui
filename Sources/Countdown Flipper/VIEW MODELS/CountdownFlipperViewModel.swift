@@ -39,8 +39,8 @@ final class CountdownFlipperViewModel {
     
     // Card Gradients Related
     let clearGradient: LinearGradient = .init(colors: [], startPoint: .top, endPoint: .bottom)
-    var colorTop: LinearGradient = .init(colors: [], startPoint: .top, endPoint: .bottom)
-    var colorBottom: LinearGradient = .init(colors: [], startPoint: .top, endPoint: .bottom)
+    var colorTop: LinearGradient = .init(colors: [Color.black.opacity(0.9)], startPoint: .top, endPoint: .bottom)
+    var colorBottom: LinearGradient = .init(colors: [Color.black.opacity(0.7)], startPoint: .top, endPoint: .bottom)
     
     // MARK: - INITIALIZER
     init(fontSize: CGFloat) {

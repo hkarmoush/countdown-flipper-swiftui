@@ -36,7 +36,7 @@ struct TopLayerView: View {
             .font(.system(size: vm.values.fontSize))
             .fontDesign(.rounded)
             .frame(width: vm.values.frameWidth, height: vm.values.frameHeight)
-            .foregroundStyle(Color(uiColor: .darkGray))
+            .foregroundStyle(Color.black)
             .maskSection(alignment: alignment, height: vm.values.maskheight)
             .background(alignment: alignment) { background }
             .rotation3DEffect(.degrees(angleX), axis: (x: 1, y: 0, z: 0))
@@ -63,7 +63,7 @@ extension TopLayerView {
             bottomTrailingRadius: alignment == .top ? cornerRadiusSmall : cornerRadiusLarge,
             topTrailingRadius: alignment == .top ? cornerRadiusLarge : cornerRadiusSmall
         )
-        .fill(.white)
+        .fill(.black)
         .fill(alignment == .top ? vm.colorTop : vm.clearGradient)
         .fill(alignment == .bottom ? vm.colorBottom :vm.clearGradient)
         .shadow(color: vm.values.shadowColor, radius: vm.values.shadowRadius)

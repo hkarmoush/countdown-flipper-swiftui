@@ -28,7 +28,7 @@ struct BottomLayerView: View {
             .font(.system(size: vm.values.fontSize))
             .fontDesign(.rounded)
             .frame(width: vm.values.frameWidth, height: vm.values.frameHeight)
-            .foregroundStyle(Color(uiColor: .darkGray))
+            .foregroundStyle(Color.black)
             .maskSection(alignment: alignment, height: vm.values.maskheight)
             .background(alignment: alignment) { background }
     }
@@ -54,7 +54,7 @@ extension BottomLayerView {
             bottomTrailingRadius: alignment == .bottom ? cornerRadiusLarge : cornerRadiusSmall,
             topTrailingRadius: alignment == .bottom ? cornerRadiusSmall : cornerRadiusLarge
         )
-        .fill(.white)
+        .fill(.black)
         .shadow(color: vm.values.shadowColor, radius: vm.values.shadowRadius)
         .frame(height: vm.values.maskheight)
     }
